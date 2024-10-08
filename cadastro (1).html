@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+
+    <style>
+
+        form {
+            text-align: center;
+        }
+
+        p: {
+            margin: 10px 0;
+        }
+
+        body {
+            background: rgb(18, 7, 0);
+            font-family: monospace;
+            font-size: 16px;
+            color:aliceblue
+        }
+
+        h1 {
+            text-align: center;
+            color:aliceblue
+            font-size: 24px;
+        }
+
+        button {
+            background-color: #ff8800; /* Laranja */
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        select {
+            font-family: monospace;
+        }
+
+        a {
+            color:#00ff2a
+        }
+
+        ::placeholder {
+            font-family:monospace
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <br>
+
+    <h1>Login</h1>
+
+    <form>
+            
+        <p>
+            <label for="nomeusuario">Nome Completo:</label>
+            <input name="nomeusuario" type="text" placeholder="Nome Completo" required>
+        </p>
+
+        <p></p>
+            <label for="emailUsuario">Endereço de email:</label>
+            <input name="emailUsuario" type="email" placeholder="Email" required>
+        </p>
+
+        <p>
+            <label for="senha">Senha:</label>
+            <input name="senha" type="text" placeholder="Senha de Usuário" required>
+        </p>
+
+        <p>
+            <label for="confirmarSenha">Confirmar senha:</label>
+            <input name="confirmarSenha" type="text" placeholder="Confirmar Senha" required>
+        </p>
+        
+        <select name="perfil">
+            <option value="professor">Professor</option>
+            <option value="administrador">Administrador</option>
+            <option value="jogador">Jogador</option>
+        </select>
+
+        <br>
+        <br>
+            
+        <button type="submit">
+            Cadastrar
+        </button><br><br>
+
+
+    </form>
+
+</body>
+
+</html>
